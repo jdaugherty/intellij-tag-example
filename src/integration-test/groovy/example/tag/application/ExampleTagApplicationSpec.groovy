@@ -1,15 +1,16 @@
 package example.tag.application
+
 import grails.gorm.transactions.Rollback
+import grails.plugin.geb.ContainerGebSpec
 import grails.testing.mixin.integration.Integration
 
-import geb.spock.*
 
 /**
  * See https://www.gebish.org/manual/current/ for more instructions
  */
 @Integration
 @Rollback
-class ExampleTagApplicationSpec extends GebSpec {
+class ExampleTagApplicationSpec extends ContainerGebSpec {
 
     void "test something"() {
         when:"The home page is visited"
