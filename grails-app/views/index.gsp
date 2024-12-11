@@ -71,6 +71,13 @@
                     </g:each>
                 </ul>
             </div>
+
+            <sec:ifAllGranted roles="ROLE_ADMIN">
+                <div>You are an admin!</div>
+            </sec:ifAllGranted>
+            <sec:ifNotGranted roles="ROLE_ADMIN">
+                <div>You are not an admin!</div>
+            </sec:ifNotGranted>
         </section>
     </div>
 </div>

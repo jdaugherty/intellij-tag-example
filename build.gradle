@@ -50,6 +50,7 @@ dependencies {
     integrationTestImplementation testFixtures("org.grails.plugins:geb:${gebVersion}")
     testImplementation("org.spockframework:spock-core")
     testImplementation("io.micronaut:micronaut-http-client")
+    implementation 'org.grails.plugins:spring-security-core:6.0.3'
 
 }
 
